@@ -15,11 +15,13 @@
     <p id="demo"></p>
 
     <script>
-      function myFunction() {
-        // window.location = "mercadopago://px/one_tap"; 
-        window.open("mercadopago://px/one_tap"); 
-        // document.getElementById("demo").innerHTML = "Funcionou";
-      }
+        var myButton = document.getElementById('submit-button');
+        myButton.style.height = '200px';
+        myButton.style.width= '200px';
+
+        function myFunction() {
+            window.open("mercadopago://px/one_tap?from=money_in&response=%7B%22status%22:%22success%22,%22external_account_id%22:%22c6374f89-b8af-3508-ba89-47633b90e2dd%22%7D")
+        }
     </script>
 
 
